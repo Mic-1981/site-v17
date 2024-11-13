@@ -1,0 +1,602 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+*{
+    font-family: Merriweather;
+    --color_menu_nav: #038b97;
+    --color_hover: #32c8d6;
+    --color_nav: white;
+    --color_pagina: #70cac3; /*rgb(65, 105, 225) ,rgb(13, 33, 79), rgb(54,140,192)*/
+    --color_main:#fff9e9;
+    --color_rodape: white;
+    --color_div_main: white;
+    --color_button: #32c8d6;
+}
+@media (min-width: 1230px){
+	main{
+		height: 1600px;
+		margin-top: 20px;
+		position: relative;
+	}
+	#lbApres{
+		top: 100px;
+		position: absolute;
+		margin-left: 7%;
+		font-size: 35px;
+	}
+	#control_emTel{
+		top:260px;
+		position: absolute;
+		margin-left: 35%;
+		font-size: 30px;
+	}
+	#control_redes{
+		top:500px;
+		position: absolute;
+		margin-left: 35%;
+		font-size: 30px;
+	}
+	#lb_tel{
+		margin-left:100px;
+		top: -70px;
+		position: relative;
+	}
+	#lb_email{
+		margin-left: 15px;
+		margin-top: 30px;
+		position: absolute;
+	}
+	#lb_insta{
+		margin-left: 20px;
+		margin-top: 30px;
+		position: absolute;
+	}
+	#lb_link{
+		margin-left: 20px;
+		margin-top: 30px;
+		position: absolute;
+	}
+	.rod_img{
+		height: 90px;
+		width: 90px;
+	}
+	.link_redes{
+		text-decoration-line:none;
+		color: black;
+
+	}
+	.link_redes:hover{
+		color: var(--color_hover);
+	}
+	.link_redes:hover{
+		color: var(--color_hover);
+	}
+
+	/* div que controla o formulário*/
+	.control_form{
+		margin-left:30%;
+		margin-bottom: 500px;
+		border-radius: 10px;	
+		width:50%;
+		overflow:hidden;
+		position:relative;
+		top:850px;
+	}
+	/* classe que controla os elemetos do formulário */
+	.elem_form{
+		margin-bottom: 20px;
+		padding: 10px;
+	}
+
+	.elem_form input{ 
+		border: 2px solid;
+		display: block;
+		font-size: 14px;
+		width:80%;
+		padding: 10px;
+		transition: 0.5s;
+	}
+	.elem_form input:focus{
+		border-radius: 10px;
+	}
+
+	.elem_form textarea{ 
+		border: 2px solid;
+		display: block;
+		transition: 0.5s;
+		font-size: 14px;
+		width:80%;
+		padding: 10px;
+	}
+	.elem_form textarea:focus{
+		border-radius: 10px;
+	}
+	.elem_form label{
+		font-size: 20px;
+	}
+
+	.elem_form small{
+		visibility: hidden;
+		bottom: 0;
+		left: 0;
+	}
+
+	.control_form button{
+		background-color: #32c8d6;
+		font-size: 20px;
+		color: white;
+		border-color: black;
+		padding: 10px;
+		width: 20%;
+		margin-left: 20px;
+		margin-bottom: 15px;
+		transition: 1s;
+	}
+	.control_form button:hover{
+		border-radius: 10px;
+		color: black;
+	}
+	.msg_Obg{
+		top:350px;
+		margin-left:47%;
+		position: relative;
+		color:#1cd06e;
+		visibility: hidden;
+	}
+	.msg_Obg.success{
+		visibility: visible;
+	}
+	/* modificadores da validação do formulário */
+	.elem_form.success input{
+		border-color:#2ecc71; 
+	}
+	.elem_form.error input{
+		border-color:#e74c3c; 
+	}
+	.elem_form.error small{
+		visibility: visible;
+		color:#e74c3c;
+	}
+
+}
+@media screen and (max-width: 1230px) and (min-width:930px){
+		main{
+			height: 1600px;
+			margin-top: 20px;
+			position: relative;
+		}
+		#lbApres{
+			top: 100px;
+			position: absolute;
+			margin-left: 7%;
+			font-size: 35px;
+		}
+		#control_emTel{
+			top:260px;
+			position: absolute;
+			margin-left: 10%;
+			font-size: 30px;
+		}
+		#control_redes{
+			top:500px;
+			position: absolute;
+			margin-left: 10%;
+			font-size: 30px;
+		}
+		#lb_tel{
+			margin-left:100px;
+			top: -70px;
+			position: relative;
+		}
+		#lb_email{
+			margin-left: 15px;
+			margin-top: 30px;
+			position: absolute;
+		}
+		#lb_insta{
+			margin-left: 20px;
+			margin-top: 30px;
+			position: absolute;
+		}
+		#lb_link{
+			margin-left: 20px;
+			margin-top: 30px;
+			position: absolute;
+		}
+		.rod_img{
+			height: 90px;
+			width: 90px;
+		}
+		.link_redes{
+			text-decoration-line:none;
+			color: black;
+
+		}
+		.link_redes:hover{
+			color: var(--color_hover);
+		}
+		.link_redes:hover{
+			color: var(--color_hover);
+		}
+
+		/* div que controla o formulário*/
+		.control_form{
+			margin-left:30%;
+			margin-bottom: 500px;
+			border-radius: 10px;	
+			width:50%;
+			overflow:hidden;
+			position:relative;
+			top:850px;
+		}
+		/* classe que controla os elemetos do formulário */
+		.elem_form{
+			margin-bottom: 20px;
+			padding: 10px;
+		}
+
+		.elem_form input{ 
+			border: 2px solid;
+			display: block;
+			font-size: 14px;
+			width:80%;
+			padding: 10px;
+			transition: 0.5s;
+		}
+		.elem_form input:focus{
+			border-radius: 10px;
+		}
+
+		.elem_form textarea{ 
+			border: 2px solid;
+			display: block;
+			transition: 0.5s;
+			font-size: 14px;
+			width:80%;
+			padding: 10px;
+		}
+		.elem_form textarea:focus{
+			border-radius: 10px;
+		}
+		.elem_form label{
+			font-size: 20px;
+		}
+
+		.elem_form small{
+			visibility: hidden;
+			bottom: 0;
+			left: 0;
+		}
+
+		.control_form button{
+			background-color: #32c8d6;
+			font-size: 20px;
+			color: white;
+			border-color: black;
+			padding: 10px;
+			width: 20%;
+			margin-left: 20px;
+			margin-bottom: 15px;
+			transition: 1s;
+		}
+		.control_form button:hover{
+			border-radius: 10px;
+			color: black;
+		}
+		.msg_Obg{
+			top:350px;
+			margin-left:47%;
+			position: relative;
+			color:#1cd06e;
+			visibility: hidden;
+		}
+		.msg_Obg.success{
+			visibility: visible;
+		}
+		/* modificadores da validação do formulário */
+		.elem_form.success input{
+			border-color:#2ecc71; 
+		}
+		.elem_form.error input{
+			border-color:#e74c3c; 
+		}
+		.elem_form.error small{
+			visibility: visible;
+			color:#e74c3c;
+		}
+	}
+
+@media screen and (max-width: 930px)and (min-width:790px){
+	main{
+		height: 1600px;
+		margin-top: 20px;
+		position: relative;
+	}
+	#lbApres{
+		top: 100px;
+		position: absolute;
+		margin-left: 7%;
+		font-size: 35px;
+	}
+	#control_emTel{
+		top:290px;
+		position: absolute;
+		margin-left: 10%;
+		font-size: 30px;
+	}
+	#control_redes{
+		top:600px;
+		position: absolute;
+		margin-left: 10%;
+		font-size: 30px;
+	}
+	#lb_tel{
+		margin-left:100px;
+		top: -70px;
+		position: relative;
+	}
+	#lb_email{
+		margin-left: -90px;
+		margin-top: 90px;
+		position: absolute;
+	}
+	#lb_insta{
+		margin-left: 20px;
+		margin-top: 30px;
+		position: absolute;
+	}
+	#lb_link{
+		margin-left: 20px;
+		margin-top: 30px;
+		position: absolute;
+	}
+	.rod_img{
+		height: 90px;
+		width: 90px;
+	}
+	.link_redes{
+		text-decoration-line:none;
+		color: black;
+
+	}
+	.link_redes:hover{
+		color: var(--color_hover);
+	}
+	.link_redes:hover{
+		color: var(--color_hover);
+	}
+
+	/* div que controla o formulário*/
+	.control_form{
+		margin-left:30%;
+		margin-bottom: 500px;
+		border-radius: 10px;	
+		width:50%;
+		overflow:hidden;
+		position:relative;
+		top:850px;
+	}
+	/* classe que controla os elemetos do formulário */
+	.elem_form{
+		margin-bottom: 20px;
+		padding: 10px;
+	}
+
+	.elem_form input{ 
+		border: 2px solid;
+		display: block;
+		font-size: 14px;
+		width:80%;
+		padding: 10px;
+		transition: 0.5s;
+	}
+	.elem_form input:focus{
+		border-radius: 10px;
+	}
+
+	.elem_form textarea{ 
+		border: 2px solid;
+		display: block;
+		transition: 0.5s;
+		font-size: 14px;
+		width:80%;
+		padding: 10px;
+	}
+	.elem_form textarea:focus{
+		border-radius: 10px;
+	}
+	.elem_form label{
+		font-size: 20px;
+	}
+
+	.elem_form small{
+		visibility: hidden;
+		bottom: 0;
+		left: 0;
+	}
+
+	.control_form button{
+		background-color: #32c8d6;
+		font-size: 20px;
+		color: white;
+		border-color: black;
+		padding: 10px;
+		width: 50%;
+		margin-left: 20px;
+		margin-bottom: 15px;
+		transition: 1s;
+	}
+	.control_form button:hover{
+		border-radius: 10px;
+		color: black;
+	}
+	.msg_Obg{
+		top:350px;
+		margin-left:47%;
+		position: relative;
+		color:#1cd06e;
+		visibility: hidden;
+	}
+	.msg_Obg.success{
+		visibility: visible;
+	}
+	/* modificadores da validação do formulário */
+	.elem_form.success input{
+		border-color:#2ecc71; 
+	}
+	.elem_form.error input{
+		border-color:#e74c3c; 
+	}
+	.elem_form.error small{
+		visibility: visible;
+		color:#e74c3c;
+	}
+}
+
+	@media screen and (max-width: 790px)and (min-width:300px){
+	main{
+		height: 1600px;
+		margin-top: 20px;
+		position: relative;
+	}
+	#lbApres{
+		top: 100px;
+		position: absolute;
+		margin-left: 7%;
+		font-size: 35px;
+	}
+	#control_emTel{
+		top:390px;
+		position: absolute;
+		margin-left: 10%;
+		font-size: 20px;
+	}
+	#control_redes{
+		top:60px;
+		position: absolute;
+		margin-left: 10%;
+		font-size:20px;
+	}
+	#control_emTel img{
+		margin-left: 70%;
+	}
+	#lb_tel{
+		margin-left:60px;
+		top:-4px;
+		position: relative;
+	}
+	#lb_email{
+		margin-left: -280px;
+		margin-top: 90px;
+		position: absolute;
+	}
+	#lb_insta{
+		margin-left: 20px;
+		margin-top: 30px;
+		position: absolute;
+	}
+	#lb_link{
+		margin-left: 20px;
+		margin-top: 30px;
+		position: absolute;
+	}
+	.rod_img{
+		height: 70px;
+		width: 70px;
+	}
+	.link_redes{
+		text-decoration-line:none;
+		color: black;
+
+	}
+	.link_redes:hover{
+		color: var(--color_hover);
+	}
+	.link_redes:hover{
+		color: var(--color_hover);
+	}
+
+	/* div que controla o formulário*/
+	.control_form{
+		margin-left:30%;
+		margin-bottom: 500px;
+		border-radius: 10px;	
+		width:50%;
+		overflow:hidden;
+		position:relative;
+		top:850px;
+	}
+	/* classe que controla os elemetos do formulário */
+	.elem_form{
+		margin-bottom: 20px;
+		padding: 10px;
+	}
+
+	.elem_form input{ 
+		border: 2px solid;
+		display: block;
+		font-size: 14px;
+		width:80%;
+		padding: 10px;
+		transition: 0.5s;
+	}
+	.elem_form input:focus{
+		border-radius: 10px;
+	}
+
+	.elem_form textarea{ 
+		border: 2px solid;
+		display: block;
+		transition: 0.5s;
+		font-size: 14px;
+		width:80%;
+		padding: 10px;
+	}
+	.elem_form textarea:focus{
+		border-radius: 10px;
+	}
+	.elem_form label{
+		font-size: 20px;
+	}
+
+	.elem_form small{
+		visibility: hidden;
+		bottom: 0;
+		left: 0;
+	}
+
+	.control_form button{
+		background-color: #32c8d6;
+		font-size: 20px;
+		color: white;
+		border-color: black;
+		padding: 10px;
+		width: 50%;
+		margin-left: 20px;
+		margin-bottom: 15px;
+		transition: 1s;
+	}
+	.control_form button:hover{
+		border-radius: 10px;
+		color: black;
+	}
+	.msg_Obg{
+		top:350px;
+		margin-left:47%;
+		position: relative;
+		color:#1cd06e;
+		visibility: hidden;
+	}
+	.msg_Obg.success{
+		visibility: visible;
+	}
+	/* modificadores da validação do formulário */
+	.elem_form.success input{
+		border-color:#2ecc71; 
+	}
+	.elem_form.error input{
+		border-color:#e74c3c; 
+	}
+	.elem_form.error small{
+		visibility: visible;
+		color:#e74c3c;
+	}
+}

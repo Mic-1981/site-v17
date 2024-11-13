@@ -1,0 +1,44 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    font-family: Merriweather;
+    --color_menu_nav: #038b97;
+    --color_hover: #32c8d6;
+    --color_nav: white;
+    --color_pagina: #70cac3; /*rgb(65, 105, 225) ,rgb(13, 33, 79), rgb(54,140,192)*/
+    --color_main:#fff9e9;
+    --color_rodape: white;
+    --color_div_main: white;
+    --color_button: #32c8d6;
+}
+
+
+body{
+    margin: auto;
+}
+
+#div_principal{
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    width: 90%;
+    height: 550px;
+    overflow: hidden;
+    border: solid 1px black;
+    border-radius: 10px;
+    box-shadow: 1px 3px 3px black;
+}
+iframe{
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 700px;
+}
+.p_geral{
+    text-align: center;
+    margin-top: 50px;
+    font: 400;
+    font-family: Merriweather;
+}
+    

@@ -1,0 +1,274 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+@media screen and (max-width: 980px) and (min-width: 430px){
+    
+/* Variáveis da Página */
+*{
+    font-family: Merriweather;
+    --color_menu_nav: #038b97;
+    --color_hover: #32c8d6;
+    --color_nav: white;
+    --color_pagina: #70cac3; /*rgb(65, 105, 225) ,rgb(13, 33, 79), rgb(54,140,192)*/
+    --color_main:#fff9e9;
+    --color_rodape: white;
+    --color_div_main: white;
+    --color_button: #32c8d6;
+}
+
+/* Estilo Geral */
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--color_pagina);
+    width: 100%;
+}
+
+/* Estilo cabeçalho */
+
+header{
+    height: 200px;
+    width: 100%;
+    margin-top: 1%;
+    background-color: var(--color_nav);
+    box-shadow: 1px 1px 3px black;
+}
+
+#logo{
+    height: 200px;
+    width: 200px;
+    border-radius: 5px 25px 5px 25px;
+    position: absolute;
+    left: 2%;
+    
+}
+#titulo{
+    text-align: center;
+    position: relative;
+    top: 60px;
+    font-size: 25px;
+    font-weight: lighter;
+    
+}
+nav{
+    position: absolute;
+    right: 4%;
+    top: 180px;
+}
+nav a{
+    text-decoration: none;
+    font-size: large;
+    position: relative;
+    margin-left: 30px;
+    color: var(--color_menu_nav);
+}
+nav a:hover{
+    color: var(--color_hover);
+}
+#home{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    right: 15px;
+    bottom: 7px;
+}
+
+
+/*Corpo da Página*/
+/*Configurações da Div das imagens dentro de cards no corpo*/
+
+main{
+    background-color: var(--color_main); 
+    height: auto;
+    margin: auto;
+    border-radius: 10px;
+    width: 90%;
+}
+main h1{
+    text-align: center;
+    position: relative;
+    top: 40px;
+    font-weight: 400;
+    line-height: 80px;
+}
+#div_main{
+    display: flex;
+    flex-flow: column;
+    margin-left: 8%;
+    
+}
+.control_div{
+    background-color: var(--color_div_main);
+    width: 480px;
+    height: 170px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 40px;
+    box-shadow: 1px 2px 2px gray;
+    columns: 2;
+    margin-left: -25px;
+}
+.control_img{
+    width: 220px;
+    height: 170px;
+    display: flex;
+    position: relative;
+    border-radius: 10px 0px 0px 10px;
+}
+.control_titulo{
+    position: relative;
+    right: 20px;
+    font-size: 21px;
+}
+.control_p{
+    text-align: justify;
+    position: relative;
+    text-align: left;
+    right: 20px;
+    bottom: 10px;
+}
+
+.button > a{
+    text-decoration: none;
+    color: white;
+}
+.button{
+    background-color: var(--color_button);
+    height: 30px;
+    width: 95px;
+    border-radius: 30px;
+    position: relative;
+    right: 60%;
+    top: 130px;
+    border: 10px;
+}
+.button:hover{
+    background-color: #038b97;
+    pointer-events: stroke;
+}
+#what_img{
+    height: 90px;
+    width: 90px;
+    float: right;
+    position: fixed;
+    right: 1%;
+    bottom: 40px;
+}
+#what_img:hover{
+    opacity: 80%;
+}
+
+/*Configurações da Div 1 do corpo*/
+
+#control_div_1{
+    margin-top: 100px;
+    width: auto;
+    margin-left: 18%;
+    margin-right: 18%;
+    
+}
+#control_div_1 > h1{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.144);
+    text-align: center;
+    line-height: 40px;
+}
+#control_div_1 > p{
+    margin-top: 80px;
+    font-size: 20px;
+    font-weight: 200;
+}
+#control_div_1 > button{
+    background-color: var(--color_button);
+    height: 40px;
+    width: 120px;
+    border-radius: 30px;
+    position: relative;
+    border: 10px;
+}
+#control_div_1_a{
+    text-decoration-line: none;
+    color: white;
+}
+
+/*Configurações da Div 2 do corpo*/
+
+#control_div_2{
+    margin-top: 180px;
+    width: auto;
+    margin-left: 18%;
+    margin-right: 18%;
+}
+#control_div_2 > h1{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.144);
+    text-align: center;
+    margin-bottom: 80px;
+    line-height: 40px;
+}
+#control_div_2 > ul > li{
+    font-size: 20px;
+    font-weight: 200;
+}
+
+/* Rodapé */
+
+footer{
+    background-color: var(--color_rodape);
+    margin-top: 40px;
+    margin-bottom: 20px;
+    height: 200px;
+    width: 100%;
+    box-shadow: 1px 1px 5px black;
+}
+#control_div_rod{
+    display: flex;
+    justify-content: left;
+}
+#img_rodape{
+    height: 180px;
+    width: 180px; 
+    border-radius: 20px;
+    
+}
+.control_titulo_rod{
+    font-weight: 400;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.144);
+    font-size: 18px;
+}
+#control_div_rod_1{
+    right: 50px;
+    width: auto;
+    
+}
+#control_div_rod_2{
+    position: relative;
+    width: auto;
+    top: 15px;
+    line-height: 40px;
+    font-size: 75%;
+}
+#control_div_rod_3{
+    position: relative;
+    width: auto;
+    top: 15px;
+    line-height: 40px;
+    left: 25px;
+    font-size: 75%;
+}
+.rod_img{
+    height: 20px;
+    width: 20px;
+    position:relative;
+    right: 2px
+}
+.link_redes{
+    text-decoration-line:none;
+    color: black;
+
+}
+.link_redes:hover{
+    color: var(--color_hover);
+}
+}
+
+
+

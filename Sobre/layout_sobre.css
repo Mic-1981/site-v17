@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+
+@media (min-width: 1010px){
+/* Variáveis da Página */
+*{
+    font-family: Merriweather;
+    --color_menu_nav: #038b97;
+    --color_hover: #32c8d6;
+    --color_nav: white;
+    --color_pagina: #70cac3; /*rgb(65, 105, 225) ,rgb(13, 33, 79), rgb(54,140,192)*/
+    --color_main:#fff9e9;
+    --color_rodape: white;
+    --color_div_main: white;
+    --color_button: #32c8d6;
+}
+
+body{
+    width: auto;
+}
+main{
+    margin-bottom: 16px;
+    margin-left: 3%;
+    margin-right: 3%;
+    width: auto;
+}
+#control_main_h1{
+    font-size: 55px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.144);
+    margin-left:22%;
+    margin-right:22%;
+}
+#control_main_h2{
+    font-size: 55px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.144);
+    margin-left:22%;
+    margin-right:22%;
+    top: 150px;
+}
+#fotoj{
+    height: 450px;
+    width: 400px;
+    margin-left: 3%;
+    margin-top: 90px;
+    position: absolute;
+    border-radius:10px;  
+}
+
+#p1{
+    text-align: justify;
+    font-family: Merriweather;
+    margin-top: 85px;
+    line-height: 25px;
+    margin-bottom: 120px;
+    position: relative;
+    left:50%;
+    width: 450px;
+    height: 500px; 
+}
+#p2{
+    text-align: justify;
+    font-family: Merriweather;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 200px;
+    line-height: 35px;
+}
+}
+
+/* Configuração para telas inferiores a notebooks*/
+@media screen and (max-width: 1010px) and (min-width: 320px){
+    /* Variáveis da Página */
+    *{
+        font-family: Merriweather;
+        --color_menu_nav: #038b97;
+        --color_hover: #32c8d6;
+        --color_nav: white;
+        --color_pagina: #70cac3; /*rgb(65, 105, 225) ,rgb(13, 33, 79), rgb(54,140,192)*/
+        --color_main:#fff9e9;
+        --color_rodape: white;
+        --color_div_main: white;
+        --color_button: #32c8d6;
+    }
+    
+    body{
+        width: auto;
+    }
+    main{
+        margin-bottom: 16px;
+        margin-left: 3%;
+        margin-right: 3%;
+        width: auto;
+    }
+    #control_main_h1{
+        font-size: 55px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.144);
+        margin-left:22%;
+        margin-right:22%;
+        margin-bottom: 120px;
+    }
+    #control_main_h2{
+        font-size: 55px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.144);
+        margin-left:22%;
+        margin-right:22%;
+        top: 200px;
+    }
+    #fotoj{
+        height: 400px;
+        width: 350px;
+        margin-top: 100px;
+        border-radius: 10px;
+        display: block;
+        margin: auto;
+    }
+    
+    #p1{
+        text-align: justify;
+        font-family: Merriweather;
+        margin-top: 120px;
+        line-height: 25px;
+        margin-bottom: 70px;
+        position: relative;
+        margin: auto;
+        width: 400px;
+        height: 500px;
+         
+    }
+    #p2{
+        text-align: justify;
+        font-family: Merriweather;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 250px;
+        line-height: 25px;
+    }
+    }
